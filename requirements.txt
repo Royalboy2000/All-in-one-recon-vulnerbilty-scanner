@@ -2,3 +2,5 @@ requests
 colorama
 beautifulsoup4
 androguard
+scapy
+dnspython
