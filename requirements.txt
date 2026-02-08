@@ -4,3 +4,4 @@ beautifulsoup4
 androguard
 scapy
 dnspython
+PyJWT
