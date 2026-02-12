@@ -5,3 +5,4 @@ androguard
 scapy
 dnspython
 PyJWT
+paramiko
