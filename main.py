@@ -98,6 +98,8 @@ class RedSentry:
             target = input(f"Enter target domain (e.g., example.com): ")
         elif module_name == "android":
             target = input(f"Enter path to APK file: ")
+        elif module_name == "n8n":
+            target = input(f"Enter target URL (e.g. http://localhost:5678): ")
         else:
             target = input(f"Enter target: ")
 
