@@ -46,6 +46,11 @@ Connects the dots between gathered data points.
 - **Data Miner:** Correlates entities (e.g., emails found in OSINT vs Android) to build profiles.
 - **Reporting:** Generates a comprehensive HTML report of all findings.
 
+#### 6. M365 Device Code Phishing
+- Automates the Microsoft 365 Device Code flow phishing attack.
+- Requests device code, displays user code, and polls for access tokens.
+- Saves full token data (Access, Refresh, Scope) to database.
+
 ## Installation
 
 1. Clone the repository:
@@ -79,14 +84,15 @@ Select a module by entering its number:
 ```
 1. ANALYSIS
 2. ANDROID
-3. N8N
-4. OSINT
-5. SCIM
-6. SECRETS
-7. SIGINT
-8. SSH
-9. WEB
-10. WORDPRESS
+3. M365_PHISH
+4. N8N
+5. OSINT
+6. SCIM
+7. SECRETS
+8. SIGINT
+9. SSH
+10. WEB
+11. WORDPRESS
 0. Exit
 ```
 
@@ -109,6 +115,7 @@ Follow the prompts to enter targets (Domain, URL, APK Path, or Network Interface
   - `wordpress.py`
   - `secrets.py`
   - `scim.py`
+  - `m365_phish.py`
 - `requirements.txt`: Python dependencies.
 
 ## TODO / Roadmap

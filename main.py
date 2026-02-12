@@ -108,6 +108,8 @@ class RedSentry:
             target = input(f"Enter SCIM Bridge URL (e.g. https://scim.example.com): ")
         elif module_name == "secrets":
             target = input(f"Enter file or directory path to scan: ")
+        elif module_name == "m365_phish":
+            target = input(f"Enter target email (for logging): ")
         else:
             target = input(f"Enter target: ")
 
