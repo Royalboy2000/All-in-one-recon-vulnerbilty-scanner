@@ -100,6 +100,14 @@ class RedSentry:
             target = input(f"Enter path to APK file: ")
         elif module_name == "n8n":
             target = input(f"Enter target URL (e.g. http://localhost:5678): ")
+        elif module_name == "ssh":
+            target = input(f"Enter target (e.g. 192.168.1.1:22): ")
+        elif module_name == "wordpress":
+            target = input(f"Enter WordPress URL (e.g. http://example.com): ")
+        elif module_name == "scim":
+            target = input(f"Enter SCIM Bridge URL (e.g. https://scim.example.com): ")
+        elif module_name == "secrets":
+            target = input(f"Enter file or directory path to scan: ")
         else:
             target = input(f"Enter target: ")
 

@@ -79,9 +79,14 @@ Select a module by entering its number:
 ```
 1. ANALYSIS
 2. ANDROID
-3. OSINT
-4. SIGINT
-5. WEB
+3. N8N
+4. OSINT
+5. SCIM
+6. SECRETS
+7. SIGINT
+8. SSH
+9. WEB
+10. WORDPRESS
 0. Exit
 ```
 
@@ -99,7 +104,23 @@ Follow the prompts to enter targets (Domain, URL, APK Path, or Network Interface
   - `web.py`
   - `analysis.py`
   - `reporting.py`
+  - `n8n.py`
+  - `ssh.py`
+  - `wordpress.py`
+  - `secrets.py`
+  - `scim.py`
 - `requirements.txt`: Python dependencies.
+
+## TODO / Roadmap
+
+Based on recent operation analysis (2026-op), the following capabilities are prioritized:
+
+- [ ] **Okta Reconnaissance:** Check for `pssoEnabled`, `desktopMFAEnabled`, and weak pipeline configurations.
+- [ ] **Subdomain Takeover Scanner:** Identify dangling CNAME records pointing to AWS/Azure/GCP.
+- [ ] **MySQL Enumeration:** Banner grabbing, version detection, and weak authentication checks (Port 3306).
+- [ ] **cPanel/WHM Recon:** Identify exposed admin panels (2082, 2083, 2087) and brute-force common credentials.
+- [ ] **Advanced Cloud Enum:** AWS S3 bucket enumeration and permissions checking.
+- [ ] **Report Generation:** Export findings to Markdown/HTML formats similar to operation summaries.
 
 ## License
 
